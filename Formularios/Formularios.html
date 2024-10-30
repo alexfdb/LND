@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>HOJA DE INSCRIPCIÓN</h1>
+    <H1>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</H1>
+    <form>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre">
+                    </td>
+                    <td>
+                        <label for="apellidos">Apellidos: </label><br>
+                        <input type="text" id="apellidos" name="apellidos">
+                    </td>
+                    <td>
+                        <label for="dni">DNI</label><br>
+                        <input type="text" id="dni" name="dni" maxlength="8" pattern="\d{8}" title="Debe tener 8 dígitos">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="localidad-nacimiento">Localidad Nacimiento</label><br>
+                        <input type="text" id="localidad-nacimiento" name="dni">
+                    </td>
+                    <td>
+                        <label for="provincia">Provincia:</label><br>
+                        <select id="provincia" name="provincia" required>
+                            <option value="" disabled selected >-selecciona-</option>
+                            <option value="madrid">Madrid</option>
+                            <option value="barcelona">Barcelona</option>
+                            <option value="sevilla">Sevilla</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="fecha-nacimiento">Fecha Nacimiento:</label><br>
+                        <input type="date" id="fecha-nacimiento" name="fecha">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="direccion">Dirección:</label><br>
+                        <input type="text" id="direccion" name="direccion" size="40">
+                    </td>
+                    <td>
+                        <label for="codigo-postal">Código Postal:</label><br>
+                        <input type="text" id="codigo-postal" name="codigo-postal">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Forma de Acceso</legend>
+            <dl>
+                <dt>
+                    <input type="radio" id="directo" name="directo">
+                    <label for="directo">Direct</label><br>
+                </dt>
+                    <dd>
+                        <input type="radio" id="bachillerato-logse" name="bachillerato-logse">
+                        <label for="bachillerato-logse">Bachillerato LOGSE. Modalidad</label>
+                        <input type="text" id="bachillerato-logse" name="bachillerato-logse">
+                    </dd>
+                    <dd>
+                        <input type="radio" id="bachillerato-experimental" name="bachillerato-experimental">
+                        <label for="bachillerato-experimental">Bachillerato Experimental</label>
+                    </dd>
+                    <dd>
+                        <input type="radio" id="cou" name="cou">
+                        <label for="cou">COU.Opción</label>
+                        <input type="text" id="cou" name="cou">
+                    </dd>
+                    <dd>
+                        <input type="radio" id="fp2" name="fp2">
+                        <label for="fp2">FP2</label><br>
+                    </dd>
+                    <dd>
+                        <input type="radio" id="otros" name="otros">
+                        <label for="otros">Otros (especifíque)</label>
+                        <input type="text" id="otros" name="otros">
+                    </dd>
+                <dt>
+                    <input type="radio" id="prueba-libre" name="prueba-libre">
+                    <label for="prueba-libre">Prueba Libre</label>
+                </dt>
+            </dl>
+        </fieldset>
+    </form>
+</body>
+</html>
